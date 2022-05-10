@@ -1,0 +1,259 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+    margin: 1.8rem;
+    font-family: 'Inter', monospace;
+}
+
+/* Barra con logo en TOP */
+
+.nav
+{
+    display: flex;
+    align-self: baseline;
+    margin: 30px;
+    padding: 10px;
+}
+
+/* contenedor principal: Main */
+
+.mainOne
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+
+}
+
+/* contenedor de textarea de (INPUT - Alert Minusculas y acentos - BOTONES encriptar/desencriptar) */
+
+.mainOne__areaIngreso
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Clase de caja de INPUT  */
+
+.box__Encriptacion
+{
+    background-color: #F3F5FC;
+    /*position: absolute;*/
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+}
+
+/* ID textarea INPUT  */
+
+#textoAencriptar
+{
+    background-color: #F3F5FC;
+    border: none;
+    resize: none;
+    width: 400px;
+    height: 300px;
+}
+
+/* MENSAJE DENTRO DE TEXTAREA */
+
+::placeholder
+{
+    color: #0A3871;
+    font-family: 'Inter', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+/* Alerta minusculas y caracteres especiales */
+
+.advertencia__Descrip
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ padding: 1rem;   
+}
+
+/* Separacion entre icono alerta y texto */
+#advertencia__parrafo
+{
+    font-size: 13px;
+    padding-left: .4rem;
+}
+
+/* contenedor botones Encriptar y Desencriptar */
+
+.box__Botones
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 1rem;
+}
+
+/* ID BOTON ENCRIPTAR */
+.box__Botones #encriptao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+    background: #0A3871;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    
+    border-radius: 24px;
+
+    /*Texto del Boton*/
+    font-family: 'Inter', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+}
+#encriptao:hover
+{
+    background-color: #FF00FF;
+    width: 330px;
+    height: 70px;
+}
+
+/* ID BOTON ENCRIPTAR */
+.box__Botones #desencriptao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+    background: #D8DFE8;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+
+
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /*texto del boton*/
+    font-family: 'Inter', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+#desencriptao:hover
+{
+    background-color: #00FFFF;
+    width: 330px;
+    height: 70px;
+}
+
+.box__Desencriptacion
+{
+    background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 940px;
+    margin-top: -80px 0 0 40px;
+    
+}
+
+.box__Desencriptacion #areaTextOut
+{
+        background-color: #F3F5FC;
+        border: none;
+        resize: none;
+        width: 400px;
+        height: 300px; 
+}
+
+.box__areaVacia
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botonCopiar
+{
+    
+    
+    padding: 24px;
+
+    background: #D8DFE8;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+
+
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /*texto del boton*/
+    font-family: 'Inter', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+footer
+{
+    background-color: #823b91c2;
+    text-align: center;
+}
+
+footer #footer__text
+{
+    display: inline;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+footer a svg
+{
+    display: inline;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+/*clases OCULTAR- APARECER */
+.ocultar
+{
+    display: none;
+}
+
+.habilitar
+{
+    display: initial;
+}
